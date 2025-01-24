@@ -1,5 +1,4 @@
 import os
-
 """
 Django settings for payment_gateway project.
 
@@ -27,8 +26,9 @@ SECRET_KEY = 'django-insecure--e-j9np149nhu(63z5k&=*%u!o4zz00nr^ftwdhwg3!o@z&khe
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["PaymentGateway.onrender.com"]
+ALLOWED_HOSTS = ['your-app-name.onrender.com']
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Application definition
 
@@ -120,8 +120,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
-
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
